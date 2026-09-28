@@ -1,0 +1,13 @@
+{% extends "attendance/base.html" %}
+{% block content %}
+<h1 class="mb-4">Attendance Dashboard</h1>
+<div class="row g-4">
+    <div class="col-md-4"><div class="card dashboard-card"><div class="card-body"><h5>Total Students</h5><h2>{{ total_students }}</h2></div></div></div>
+    <div class="col-md-4"><div class="card dashboard-card"><div class="card-body"><h5>Present Today</h5><h2>{{ present_today }}</h2></div></div></div>
+    <div class="col-md-4"><div class="card dashboard-card"><div class="card-body"><h5>Absent Today</h5><h2>{{ absent_today }}</h2></div></div></div>
+</div>
+<div class="mt-4 d-flex gap-2">
+    <a href="{% url 'add_student' %}" class="btn btn-primary">+ Add Student</a>
+    <a href="{% url 'mark_attendance' %}" class="btn btn-success">Mark Attendance</a>
+</div>
+{% endblock %}
