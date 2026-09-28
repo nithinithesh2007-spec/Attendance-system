@@ -1,0 +1,22 @@
+body {
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+}
+.dashboard-card {
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+.dashboard-card h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
